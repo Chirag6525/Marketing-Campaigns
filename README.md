@@ -24,4 +24,10 @@ education (categorical: “basic.4y”, “basic.6y”, “basic.9y”, “high.
 - **nr.employed:** number of employees — (numeric)
 ## Logistic Regression
 Logistic Regression is a Machine Learning classification algorithm that is used to predict the probability of a categorical dependent variable. In logistic regression, the dependent variable is a binary variable that contains data coded as 1 (yes, success, etc.) or 0 (no, failure, etc.). In other words, the logistic regression model predicts P(Y=1) as a function of X.
+## Over-sampling using SMOTE
+At a high level, SMOTE:
+- Works by creating synthetic samples from the minor class (no-subscription) instead of creating copies.
+- Randomly choosing one of the k-nearest-neighbors and using it to create a similar, but randomly tweaked, new observations.
+## Recursive Feature Elimination
+Recursive Feature Elimination (RFE) is based on the idea to repeatedly construct a model and choose either the best or worst performing feature, setting the feature aside and then repeating the process with the rest of the features. This process is applied until all features in the dataset are exhausted. The goal of RFE is to select features by recursively considering smaller and smaller sets of features.
 ### Accuracy: 0.81
